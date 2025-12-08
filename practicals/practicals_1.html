@@ -3,64 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практична робота №1 – Основи HTML</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Практична робота №1</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <header>
-    <h1>Практична робота №1 – Основи HTML</h1>
+    <div class="header-content">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про мене</a></li>
-            <li><a href="practicals.html">Практичні роботи</a></li>
-            <li><a href="labs.html">Лабораторні заняття</a></li>
-        </ul>
-    </nav>
+        <h1 class="site-title">Практична робота №1</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="../practicals/all_practicals.html">Практичні роботи</a></li>
+                <li><a href="../labs/all_labs.html">Лабораторні заняття</a></li>
+            </ul>
+        </nav>
+
+    </div>
 </header>
 
-<main>
-    <section>
-        <h2>Розклад занять на місяць</h2>
 
-        <table>
+<main>
+
+    <div class="page-container">
+        
+        <h3>Розклад занять на місяць</h3>
+
+        <table class="schedule">
             <thead>
                 <tr>
                     <th>Дата</th>
-                    <th>Дисципліна</th>
+                    <th>Предмет</th>
                     <th>Час</th>
-                    <th>Аудиторія / Онлайн</th>
+                    <th>Аудиторія</th>
                 </tr>
             </thead>
             <tbody>
+
                 <tr>
-                    <td>03.02</td>
-                    <td>Веб-технології</td>
-                    <td>10:00 – 11:20</td>
-                    <td>302</td>
+                    <td>15.12 (Пн)</td>
+                    <td>Web-технології</td>
+                    <td>09:45 – 11:20</td>
+                    <td>211</td>
                 </tr>
+
                 <tr>
-                    <td>05.02</td>
-                    <td>Бази даних</td>
-                    <td>12:40 – 14:00</td>
-                    <td>Zoom</td>
+                    <td>16.12 (Вт)</td>
+                    <td>Залік з української мови</td>
+                    <td>11:45 – 13:20</td>
+                    <td>202</td>
                 </tr>
+
                 <tr>
-                    <td>07.02</td>
-                    <td>ООП</td>
-                    <td>08:30 – 09:50</td>
-                    <td>204</td>
+                    <td>16.12 (Вт)</td>
+                    <td>Інноваційне підприємництво</td>
+                    <td>13:30 – 15:05</td>
+                    <td>219</td>
                 </tr>
+
+                <tr>
+                    <td>18.12 (Чт)</td>
+                    <td>Іноземна мова</td>
+                    <td>11:45 – 13:20</td>
+                    <td>320</td>
+                </tr>
+
+                <tr>
+                    <td>18.12 (Чт)</td>
+                    <td>ООП C#</td>
+                    <td>13:30 – 15:05</td>
+                    <td>207</td>
+                </tr>
+
+                <tr>
+                    <td>19.12 (Пт)</td>
+                    <td>Аналіз вимог до ПЗ</td>
+                    <td>13:30 – 15:05</td>
+                    <td>325</td>
+                </tr>
+
+                <tr>
+                    <td>22.12 (Пн)</td>
+                    <td>Вишмат</td>
+                    <td>13:30 – 15:05</td>
+                    <td>501</td>
+                </tr>
+
+                <tr>
+                    <td>24.12 (Ср)</td>
+                    <td>Філософія</td>
+                    <td>09:45 – 11:20</td>
+                    <td>202</td>
+                </tr>
+
             </tbody>
         </table>
-    </section>
+
+    </div>
+
 </main>
 
 <footer>
-    <p>© 2025 Роман Колінько</p>
+    <div class="footer-container">
+
+        <p>© 2025 Роман Колінько</p>
+
+        <div class="footer-contacts">
+            <span><strong>Телефон:</strong> +380731072157</span>
+            <span><strong>Email:</strong> 
+                <a href="mailto:kolinkoroman447@gmail.com">kolinkoroman447@gmail.com</a>
+            </span>
+            <span><strong>Telegram:</strong>
+                <a href="https://t.me/romane_k" target="_blank">@romane_k</a>
+            </span>
+        </div>
+
+        <p>
+            <a target="_blank" href="https://github.com/Kolinko-Roman">GitHub профіль</a>
+        </p>
+
+    </div>
 </footer>
+
 
 </body>
 </html>

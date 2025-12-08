@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 – Основи HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <h1 class="site-title">Лабораторна робота №1</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="../about.html">Про мене</a></li>
+                <li><a href="../practicals/all_practicals.html">Практичні роботи</a></li>
+                <li><a href="all_labs.html">Лабораторні заняття</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="page-container">
+
+        <h2>Реєстраційна форма</h2>
+
+        <!-- ФОРМА -->
+        <form action="https://webhook.site/86b50370-2b32-42cb-9705-2fcbd16d3d3d" method="POST">
+
+            <label for="name">Ім’я:</label>
+            <input type="text" id="name" name="first_name" required>
+
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="last_name" required>
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Підтвердження пароля:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <label for="birthdate">Дата народження:</label>
+            <input type="date" id="birthdate" name="birthdate">
+
+            <label for="gender">Стать:</label>
+            <select id="gender" name="gender">
+                <option value="">Оберіть стать</option>
+                <option value="male">Чоловіча</option>
+                <option value="female">Жіноча</option>
+                <option value="other">Інше</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Надіслати">
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-container">
+        <p>© 2025 Роман Колінько</p>
+
+        <div class="footer-contacts">
+            <span><strong>Телефон:</strong> +380731072157</span>
+            <span><strong>Email:</strong>
+                <a href="mailto:kolinkoroman447@gmail.com">kolinkoroman447@gmail.com</a>
+            </span>
+            <span><strong>Telegram:</strong>
+                <a href="https://t.me/romane_k" target="_blank">@romane_k</a>
+            </span>
+        </div>
+
+        <p>
+            <a target="_blank" href="https://github.com/Kolinko-Roman">GitHub профіль</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

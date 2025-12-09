@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+/* ======= TOP HEADER ======= */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-header .left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.burger {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.right .icon {
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ======= LAYOUT ======= */
+.layout {
+    display: flex;
+}
+
+/* ======= SIDEBAR ======= */
+.sidebar {
+    width: 240px;
+    background: white;
+    border-right: 1px solid #ddd;
+    height: calc(100vh - 55px);
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+/* ======= MAIN CONTENT ======= */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.categories span {
+    background: #eee;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.video-card {
+    width: 300px;
+    height: 180px;
+    background: #ddd;
+    border-radius: 10px;
+}

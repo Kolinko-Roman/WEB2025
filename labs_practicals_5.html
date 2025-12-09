@@ -1,81 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Cover</title>
-
-    <!-- Google Font (як у Figma – Heebo) -->
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+    <title>Портфоліо — Роман Колінько</title>
     <link rel="stylesheet" href="css/labs_practicals_5.css">
 </head>
 <body>
 
-<!-- ===== MAIN WHITE CONTENT WRAPPER ===== -->
-<div class="page-wrapper">
+<header class="header">
+    <div class="container header-container">
 
-    <!-- ===== HEADER ===== -->
-    <header>
-        <a href="#">Works</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-    </header>
+        <h1 class="logo">Роман Колінько</h1>
 
-    <!-- ===== COVER SECTION ===== -->
-    <section class="cover">
-        <div class="left">
-            <h1>Hi, I am John,<br>Creative Technologist</h1>
-
-            <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-
-            <button class="btn">Download Resume</button>
+        <div class="burger" id="burger">
+            <span></span><span></span><span></span>
         </div>
 
-        <div class="avatar">
-            <img src="https://i.imgur.com/Q6aZlQx.png" alt="Profile">
-        </div>
-    </section>
+        <nav class="nav" id="nav">
+            <a href="about.html">Про мене</a>
+            <a href="all_practicals.html">Практичні роботи</a>
+            <a href="all_labs.html">Лабораторні роботи</a>
+        </nav>
 
-    <!-- ===== RECENT POSTS ===== -->
-    <section class="recent-posts">
-        <div class="section-header">
-            <h2>Recent posts</h2>
-            <a class="view-all" href="#">View all</a>
-        </div>
+    </div>
+</header>
 
-        <div class="posts">
-            <!-- Post 1 -->
-            <div class="post-card">
-                <h3>Making a design system from scratch</h3>
-                <div class="date">12 Feb 2020 &nbsp; | &nbsp; Design, Pattern</div>
-                <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p>
-            </div>
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-container">
 
-            <!-- Post 2 -->
-            <div class="post-card">
-                <h3>Creating pixel perfect icons in Figma</h3>
-                <div class="date">12 Feb 2020 &nbsp; | &nbsp; Figma, Icon Design</div>
-                <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p>
+        <div class="hero-text">
+            <h2>Привіт, я <span>Роман</span></h2>
+            <p>Студент ТЦР-22. Тут зібрані всі мої лабораторні та практичні роботи з дисципліни “Веб-технології”.</p>
+
+            <div class="hero-buttons">
+                <a href="all_labs.html" class="btn">Переглянути лабораторні</a>
+                <a href="all_practicals.html" class="btn">Переглянути практичні</a>
             </div>
         </div>
-    </section>
 
-    <!-- ===== FEATURED WORKS ===== -->
-    <section class="featured">
-        <h2>Featured works</h2>
-    </section>
+        <div class="hero-image">
+            <img src="images/me.jpg" alt="Фото Романа">
+        </div>
 
-</div> <!-- END WRAPPER -->
+    </div>
+</section>
+
+<!-- LABS -->
+<section class="labs-works">
+    <div class="container">
+        <h2 class="section-title">Лабораторні роботи</h2>
+
+        <div class="card-wrapper">
+
+            <div class="card">
+                <div class="card-title"><a href="lab1.html" class="btn">Лабораторна №1 — HTML</a></div>
+                <div class="card-text">Створення реєстраційної форми.</div>
+                <div class="card-date">2025</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><a href="lab2.html" class="btn">Лабораторна №2 — CSS</a></div>
+                <div class="card-text">Селектори, стилі, оформлення.</div>
+                <div class="card-date">2025</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><a href="lab3.html" class="btn">Лабораторна №3 — Flexbox</a></div>
+                <div class="card-text">Макет YouTube у Flexbox.</div>
+                <div class="card-date">2025</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><a href="lab6.html" class="btn">Лабораторна №6 — Анімації</a></div>
+                <div class="card-text">CSS-анімації та покемон-спрайти.</div>
+                <div class="card-date">2025</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PRACTICALS -->
+<section class="practicals">
+    <div class="container">
+        <h2 class="section-title">Практичні роботи</h2>
+
+        <div class="practice-card">
+            <div class="tag">HTML</div>
+            <div class="card-title">Практична №1 — HTML</div>
+            <div class="card-text">Розклад занять у вигляді таблиці.</div>
+        </div>
+
+        <div class="practice-card">
+            <div class="tag">CSS</div>
+            <div class="card-title">Практична №2 — CSS</div>
+            <div class="card-text">Стилізація форми та елементів.</div>
+        </div>
+
+        <div class="practice-card">
+            <div class="tag">Flexbox</div>
+            <div class="card-title">Практична №3 — Flexbox</div>
+            <div class="card-text">Макет YouTube у Flexbox.</div>
+        </div>
+
+        <div class="practice-card">
+            <div class="tag">Grid</div>
+            <div class="card-title">Практична №4 — CSS Grid</div>
+            <div class="card-text">Full-size клавіатура.</div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <h3>Контакти</h3>
+
+        <p><a href="mailto:kolinkoroman447@gmail.com">kolinkoroman447@gmail.com</a></p>
+        <p>Телефон: +380731072157</p>
+        <p>Telegram: <a href="https://t.me/romane_k">@romane_k</a></p>
+
+        <div class="socials">
+            <a href="https://github.com/Kolinko-Roman">GitHub</a>
+        </div>
+
+        <p>© 2025 Портфоліо Романа Колінька</p>
+    </div>
+</footer>
 
 </body>
 </html>

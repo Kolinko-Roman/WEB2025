@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__logo {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: $color-accent-soft;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    color: $color-muted;
+  }
+}

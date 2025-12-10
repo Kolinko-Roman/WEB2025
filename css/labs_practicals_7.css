@@ -1,0 +1,126 @@
+.page {
+  min-height: 100vh;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #edf2f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1b263b 0, #000814 60%, #000000 100%);
+  overflow: hidden;
+}
+.page__background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.page__content {
+  position: relative;
+  z-index: 1;
+  width: min(960px, 100% - 32px);
+  background: linear-gradient(135deg, #1b263b, #111827);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.page__main {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.header__logo {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffccd5;
+}
+.header__subtitle {
+  font-size: 13px;
+  color: #8d99ae;
+}
+
+.greeting-card {
+  max-width: 640px;
+}
+.greeting-card__title {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+.greeting-card__text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #edf2f4;
+  margin-bottom: 20px;
+}
+.greeting-card__accent {
+  color: #ff4d6d;
+  font-weight: 700;
+}
+.greeting-card__signature {
+  font-size: 14px;
+  color: #8d99ae;
+  margin-bottom: 28px;
+}
+.greeting-card__name {
+  font-weight: 600;
+  color: #ffccd5;
+}
+.greeting-card__button {
+  margin-top: 4px;
+}
+
+.button {
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #ff4d6d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+.button:hover {
+  background: rgb(255, 41.3, 79.7179775281);
+  transform: translateY(-1px);
+}
+.button:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.footer {
+  border-top: 1px solid rgba(148, 163, 184, 0.25);
+  padding-top: 16px;
+  font-size: 12px;
+  color: #8d99ae;
+  text-align: center;
+}
+.footer__text {
+  opacity: 0.9;
+}
+
+.snow {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px), radial-gradient(circle, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+  background-size: 180px 180px, 220px 220px;
+  background-position: 0 0, 90px 90px;
+  animation: snow-fall 25s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes snow-fall {
+  0% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+/*# sourceMappingURL=labs_practicals_7.css.map */

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфоліо — Роман Колінько</title>
-    <link rel="stylesheet" href="css/labs_practicals_5.css">
+    <title>Портфоліо — Роман Колінько (Адаптивна версія)</title>
+    <link rel="stylesheet" href="../css/labs_practicals_8.css">
 </head>
 <body>
 
@@ -30,18 +30,18 @@
 <section class="hero">
     <div class="container hero-container">
 
+        <div class="hero-image">
+            <img src="../images/me.jpg" alt="Фото Романа">
+        </div>
+
         <div class="hero-text">
             <h2>Привіт, я <span>Роман</span></h2>
             <p>Студент ТЦР-22. Тут зібрані всі мої лабораторні та практичні роботи з дисципліни “Веб-технології”.</p>
 
             <div class="hero-buttons">
-                <a href="all_labs.html" class="btn">Переглянути лабораторні</a>
-                <a href="all_practicals.html" class="btn">Переглянути практичні</a>
+                <a href="all_labs.html" class="btn">Лабораторні</a>
+                <a href="all_practicals.html" class="btn btn-outline">Практичні</a>
             </div>
-        </div>
-
-        <div class="hero-image">
-            <img src="images/me.jpg" alt="Фото Романа">
         </div>
 
     </div>
@@ -55,25 +55,25 @@
         <div class="card-wrapper">
 
             <div class="card">
-                <div class="card-title"><a href="lab1.html" class="btn">Лабораторна №1 — HTML</a></div>
+                <div class="card-title"><a href="lab1.html" class="btn-link">Лабораторна №1 — HTML</a></div>
                 <div class="card-text">Створення реєстраційної форми.</div>
                 <div class="card-date">2025</div>
             </div>
 
             <div class="card">
-                <div class="card-title"><a href="lab2.html" class="btn">Лабораторна №2 — CSS</a></div>
+                <div class="card-title"><a href="lab2.html" class="btn-link">Лабораторна №2 — CSS</a></div>
                 <div class="card-text">Селектори, стилі, оформлення.</div>
                 <div class="card-date">2025</div>
             </div>
 
             <div class="card">
-                <div class="card-title"><a href="lab3.html" class="btn">Лабораторна №3 — Flexbox</a></div>
+                <div class="card-title"><a href="lab3.html" class="btn-link">Лабораторна №3 — Flexbox</a></div>
                 <div class="card-text">Макет YouTube у Flexbox.</div>
                 <div class="card-date">2025</div>
             </div>
 
             <div class="card">
-                <div class="card-title"><a href="lab6.html" class="btn">Лабораторна №6 — Анімації</a></div>
+                <div class="card-title"><a href="lab6.html" class="btn-link">Лабораторна №6 — Анімації</a></div>
                 <div class="card-text">CSS-анімації та покемон-спрайти.</div>
                 <div class="card-date">2025</div>
             </div>
@@ -122,13 +122,15 @@
         <p>Телефон: +380731072157</p>
         <p>Telegram: <a href="https://t.me/romane_k">@romane_k</a></p>
 
-        <div class="socials">
-            <a href="https://github.com/Kolinko-Roman">GitHub</a>
-        </div>
-
         <p>© 2025 Портфоліо Романа Колінька</p>
     </div>
 </footer>
+
+<script>
+document.getElementById("burger").onclick = function () {
+    document.getElementById("nav").classList.toggle("nav-open");
+};
+</script>
 
 </body>
 </html>

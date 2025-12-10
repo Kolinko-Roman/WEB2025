@@ -1,136 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Keyboard</title>
+    <title>Keyboard</title>
     <link rel="stylesheet" href="../css/practicals_4.css">
 </head>
 <body>
 
 <div class="keyboard">
 
-    <!-- Row 1 -->
-    <div class="key esc">Esc</div>
-    <div class="key">F1</div>
-    <div class="key">F2</div>
-    <div class="key">F3</div>
-    <div class="key">F4</div>
-    <div class="key">F5</div>
-    <div class="key">F6</div>
-    <div class="key">F7</div>
-    <div class="key">F8</div>
-    <div class="key">F9</div>
-    <div class="key">F10</div>
-    <div class="key">F11</div>
-    <div class="key">F12</div>
+    <!-- MAIN BLOCK -->
+    <div class="block main">
 
-    <!-- Row 2 -->
-    <div class="key wide2">| 1</div>
-    <div class="key">2</div>
-    <div class="key">3</div>
-    <div class="key">4</div>
-    <div class="key">5</div>
-    <div class="key">6</div>
-    <div class="key">7</div>
-    <div class="key">8</div>
-    <div class="key">9</div>
-    <div class="key">0</div>
-    <div class="key">?</div>
-    <div class="key wide2">Backspace</div>
+        <div class="row">
+            <button>esc</button>
+            <button>F1</button><button>F2</button><button>F3</button><button>F4</button>
+            <button>F5</button><button>F6</button><button>F7</button><button>F8</button>
+            <button>F9</button><button>F10</button><button>F11</button><button>F12</button>
+        </div>
 
-    <!-- Row 3 -->
-    <div class="key wide3">Caps Lock</div>
-    <div class="key">Q</div>
-    <div class="key">W</div>
-    <div class="key">E</div>
-    <div class="key">R</div>
-    <div class="key">T</div>
-    <div class="key">Y</div>
-    <div class="key">U</div>
-    <div class="key">I</div>
-    <div class="key">O</div>
-    <div class="key">P</div>
-    <div class="key tall">Enter</div>
+        <div class="row">
+            <button>`</button><button>1</button><button>2</button><button>3</button>
+            <button>4</button><button>5</button><button>6</button><button>7</button>
+            <button>8</button><button>9</button><button>0</button><button>-</button><button>=</button>
+            <button class="wide">backspace</button>
+        </div>
 
-    <!-- Row 4 -->
-    <div class="key wide4">Shift</div>
-    <div class="key">A</div>
-    <div class="key">S</div>
-    <div class="key">D</div>
-    <div class="key">F</div>
-    <div class="key">G</div>
-    <div class="key">H</div>
-    <div class="key">J</div>
-    <div class="key">K</div>
-    <div class="key">L</div>
-    <div class="key wide4">Shift</div>
+        <div class="row">
+            <button class="wide">tab</button>
+            <button>Q</button><button>W</button><button>E</button><button>R</button>
+            <button>T</button><button>Y</button><button>U</button><button>I</button>
+            <button>O</button><button>P</button><button>[</button><button>]</button><button>\</button>
+        </div>
 
-    <!-- Row 5 -->
-    <div class="key wide3">Ctrl</div>
-    <div class="key">Z</div>
-    <div class="key">X</div>
-    <div class="key">C</div>
-    <div class="key">V</div>
-    <div class="key">B</div>
-    <div class="key">N</div>
-    <div class="key">M</div>
-    <div class="key">,</div>
-    <div class="key">.</div>
-    <div class="key wide3">Ctrl</div>
+        <div class="row">
+            <button class="wide">caps</button>
+            <button>A</button><button>S</button><button>D</button><button>F</button>
+            <button>G</button><button>H</button><button>J</button><button>K</button>
+            <button>L</button><button>;</button><button>'</button>
+            <button class="wide">return</button>
+        </div>
 
-    <!-- Space -->
-    <div class="key spacebar">Space</div>
+        <div class="row">
+            <button class="wide">shift</button>
+            <button>Z</button><button>X</button><button>C</button><button>V</button>
+            <button>B</button><button>N</button><button>M</button><button>,</button><button>.</button><button>/</button>
+            <button class="wide">shift</button>
+        </div>
 
-</div>
+        <div class="row">
+            <button>control</button><button>option</button><button>command</button>
+            <button class="space">space</button>
+            <button>command</button><button>option</button><button>control</button>
+        </div>
 
-<!-- Navigation Block -->
-<div class="nav-block">
-    <div class="key small">Stamp</div>
-    <div class="key small">Bloc<br>Scorr</div>
-    <div class="key small">Pausa<br>Inter</div>
+    </div>
 
-    <div class="key small">Ins</div>
-    <div class="key small">Home</div>
-    <div class="key small">Pg↑</div>
 
-    <div class="key small">Canc</div>
-    <div class="key small">Fine</div>
-    <div class="key small">Pg↓</div>
-</div>
+    <!-- NAV + ARROWS BLOCK -->
+    <div class="block nav-arrows">
 
-<!-- Arrows -->
-<div class="arrows">
-    <div></div>
-    <div class="key arrow">↑</div>
-    <div></div>
-    <div class="key arrow">←</div>
-    <div class="key arrow">↓</div>
-    <div class="key arrow">→</div>
-</div>
+        <div class="nav">
+            <div class="row">
+                <button>fn</button><button>home</button><button>end</button>
+            </div>
+            <div class="row">
+                <button>page up</button><button>page down</button><button>delete</button>
+            </div>
+        </div>
 
-<!-- NumPad -->
-<div class="numpad">
-    <div class="key">Num</div>
-    <div class="key">/</div>
-    <div class="key">*</div>
-    <div class="key">-</div>
+        <div class="arrows">
+            <div class="row top-arrow">
+                <button>↑</button>
+            </div>
+            <div class="row">
+                <button>←</button><button>↓</button><button>→</button>
+            </div>
+        </div>
 
-    <div class="key">7</div>
-    <div class="key">8</div>
-    <div class="key">9</div>
-    <div class="key tall2">Enter</div>
+    </div>
 
-    <div class="key">4</div>
-    <div class="key">5</div>
-    <div class="key">6</div>
 
-    <div class="key">1</div>
-    <div class="key">2</div>
-    <div class="key">3</div>
+    <!-- NUMPAD -->
+    <div class="block numpad">
 
-    <div class="key wide2">0</div>
-    <div class="key">.</div>
+        <div class="row">
+            <button>clear</button><button>=</button><button>/</button><button>*</button>
+        </div>
+
+        <div class="row">
+            <button>7</button><button>8</button><button>9</button><button>-</button>
+        </div>
+
+        <div class="row">
+            <button>4</button><button>5</button><button>6</button><button>+</button>
+        </div>
+
+        <div class="row">
+            <button>1</button><button>2</button><button>3</button>
+            <button class="big-enter">enter</button>
+        </div>
+
+        <div class="row">
+            <button class="wide-zero">0</button>
+            <button>.</button>
+        </div>
+
+    </div>
+
 </div>
 
 </body>

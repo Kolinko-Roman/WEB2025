@@ -1,0 +1,228 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* NAVIGATION */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    color: #ff4d6d;
+}
+
+/* BURGER for mobile */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 26px;
+    height: 3px;
+    background: #333;
+    border-radius: 4px;
+}
+
+/* HERO */
+.hero {
+    padding: 60px 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Image */
+.hero-image img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e8f7ff;
+}
+
+/* Text */
+.hero-text h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-text h2 span {
+    color: #ff4d6d;
+}
+
+.hero-text p {
+    font-size: 18px;
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    background: #ff4d6d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ff4d6d;
+    color: #ff4d6d;
+}
+
+/* CARDS */
+.labs-works {
+    background: #f7f7f7;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.card-title a {
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.practice-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.tag {
+    display: inline-block;
+    background: #ff4d6d;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer a {
+    color: #ff4d6d;
+}
+
+/* =============== MOBILE VERSION =============== */
+
+@media (max-width: 768px) {
+
+    /* Burger visible */
+    .burger {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        padding: 20px;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 60%;
+        border-left: 1px solid #eee;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .nav.nav-open {
+        display: flex;
+    }
+
+    /* Hero mobile layout */
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

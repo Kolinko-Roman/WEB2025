@@ -1,92 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
+/* --- BODY / BACKGROUND --- */
 body {
-    background: #ddd;
-    font-family: 'Inter', sans-serif;
-    display: grid;
-    grid-template-columns: 900px 200px 150px 200px;
-    gap: 30px;
-    padding: 20px;
+  background: #0d0d13;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: 0;
 }
 
-/* GRID Клавіатури */
+/* --- КОНТЕЙНЕР ВСІЄЇ КЛАВІАТУРИ --- */
 .keyboard {
-    display: grid;
-    grid-template-columns: repeat(13, 60px);
-    grid-auto-rows: 60px;
-    gap: 6px;
+  display: grid;
+  /* 3 стовпці: MAIN / NAV+ARROWS / NUMPAD */
+  grid-template-columns: 1.4fr 0.6fr 0.8fr;
+  gap: 40px;
+
+  max-width: 100%;
+  overflow-x: auto;
+  padding-left: 40px;
 }
 
-/* NumPad */
-.numpad {
-    display: grid;
-    grid-template-columns: repeat(4, 60px);
-    grid-auto-rows: 60px;
-    gap: 6px;
+/* --- БЛОКИ --- */
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-/* Navigation */
-.nav-block {
-    display: grid;
-    grid-template-columns: repeat(3, 65px);
-    grid-auto-rows: 60px;
-    gap: 6px;
+/* --- РЯДИ В БЛОКАХ --- */
+.row {
+  display: flex;
+  gap: 10px;
 }
 
-/* Arrows */
-.arrows {
-    display: grid;
-    grid-template-columns: repeat(3, 60px);
-    grid-template-rows: repeat(2, 60px);
-    gap: 6px;
-    align-self: center;
+/* --- ЗАГАЛЬНИЙ СТИЛЬ КЛАВІШ --- */
+button {
+  min-width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  background: #2f3045;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.15s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
-/* Стиль клавіш */
-.key {
-    background: #fff;
-    border: 2px solid #888;
-    border-radius: 6px;
-    font-size: 16px;
-    text-align: center;
-    padding-top: 15px;
-    box-shadow: 0 3px 0 #777, 0 3px 5px rgba(0,0,0,0.3);
-    cursor: pointer;
-    transition: 0.15s;
-    user-select: none;
+button:hover {
+  background: #3a3b57;
 }
 
-/* Анімація натискання */
-.key:active {
-    transform: translateY(3px);
-    box-shadow: 0 1px 0 #555 inset;
-    background: #f1f1f1;
+button:active {
+  transform: translateY(3px);
+  background: #232436;
 }
 
-/* Розширені клавіші */
-.wide2 { grid-column: span 2; }
-.wide3 { grid-column: span 3; }
-.wide4 { grid-column: span 4; }
-
-.tall { grid-row: span 2; }
-.tall2 { grid-row: span 2; padding-top: 30px; }
-
-.spacebar {
-    grid-column: span 7;
-    height: 60px;
-    padding-top: 20px;
-    font-size: 18px;
+/* --- СПЕЦІАЛЬНІ ШИРИНА / РОЗМІРИ --- */
+.wide {
+  min-width: 120px;
 }
 
-/* Дрібні клавіші */
-.small {
-    font-size: 13px;
-    line-height: 14px;
-    padding-top: 10px;
+.space {
+  min-width: 350px;
 }
 
-/* Стрілки */
-.arrow {
-    font-size: 22px;
-    padding-top: 10px;
+.wide-zero {
+  flex: 2;
+  min-width: 0;
+}
+
+.big-enter {
+  min-height: 50px;
+  width: 55px;
+}
+
+.main .row {
+    justify-content: space-between;
+}
+
+/* --- NAV + ARROWS блок як один контейнер --- */
+.nav-arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-arrows .nav,
+.nav-arrows .arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+/* --- Стрілки зменшеної висоти --- */
+.arrows button {
+  height: 45px;
+}
+
+/* --- Позиціонування стрілок вниз --- */
+.nav-arrows .arrows {
+  margin-top: auto;
+}
+
+.top-arrow button {
+    margin-left: 65px;
+}
+
+/* --- NUMPAD: фіксована ширина, щоб нижні клавіші не «вилазили» --- */
+.block.numpad {
+  width: 260px;
+}
+
+.block.numpad .row:last-child button {
+  flex: 1;
 }
